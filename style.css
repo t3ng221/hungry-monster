@@ -1,0 +1,13 @@
+.navitem{
+    margin-top: -50px;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+    
+}
+#input{
+    background-color: rgb(219, 248, 175);
+}
