@@ -11,3 +11,20 @@
 #input{
     background-color: rgb(219, 248, 175);
 }
+#meal-pic{
+    height: 250px;
+    width: 400px;
+    border-radius: 25px;
+}
+.meal-info-section{
+    margin-left: 30%;
+    justify-content: center;
+}
+.meal-details-sec{
+    color:black;
+    font-weight:normal;
+    font-size: 15px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+   
+}

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background-color: rgb(252, 241, 241);">
     <section id="meal-details-sec">
         <ul>
             <div class="logo"><img src="./logo.svg" alt=""></div>
@@ -38,22 +38,30 @@
 
         <div class="searchbar" id="search">
             <input id="input" type="text" placeholder="Search">
-            <button onclick="searchMeal()">Search</button>
+            <button class="btm-success" onclick="searchMeal()">Search</button>
         </div>
 
-        <div id="meal-detail"></div>
+        <div class="justify-content-center" id="meal-detail"></div>
         <div id="meals"></div>
     </section>
 
 
-    <section id="meal-details-sec" class="row my-5 d-flex justify-content-center p-3">
-        <img id="meal-pic" src=`${meal-pic}` alt="">
+    <section  class="meal-detail-area row my-5 d-flex p-3" >
+    <section id="image-plus-ingre">
+        <section id='meal-image'>
+            <img style="margin-left: 30%;" id="meal-pic" src="">
+        </section>
+        <div  id="meal-details-sec" class="mt-5" onclick="searchMeal()" style="margin-left: 31%;" >
+            <h3>
+                <div id="meal-name" class="row my-5 d-flex p-3">
 
-    </section>
-
-
-    <section id="meal-info-section" class="row">
-
+                </div>
+            </h3>
+            <h5 style="margin-bottom: 6%;">Ingredients</h5>
+        </div>
+        <section style="margin-left: 30%;" id="meal-info-section" class="row">
+    
+        </section>
     </section>
     </main>
 
