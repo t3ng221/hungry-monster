@@ -1,3 +1,4 @@
+
 const searchMeal = () => {
 
     const mealName = document.getElementById('input').value;
@@ -12,26 +13,27 @@ const setInnerText = (id, text) => {
     document.getElementById(id).innerText = text;
 }
 const displayMeal = meal => {
+    document.getElementById("haga").style.display = 'block';
     setInnerText('meal-name', meal.strMeal);
-    if (meal.strMealThumb) {
 
-        document.getElementById("meal-pic").setAttribute("src", meal.strMealThumb);
-    }
-    
+
+    document.getElementById("meal-pic").setAttribute("src", meal.strMealThumb);
+
+
     const mealIngredients = document.getElementById('meal-info-section');
-    
 
 
-    for(let i = 1; meal[`strIngredient${i}`]; i++){
+
+    for (let i = 1; meal[`strIngredient${i}`]; i++) {
         const ingredients = `
         ✔ ${meal[`strMeasure${i}`]} ${meal[`strIngredient${i}`]}
         
         `
         const mealDetails = document.createElement('p');
-        
+
         mealDetails.className = 'meal-details-sec';
         mealDetails.innerText = ingredients;
         mealIngredients.appendChild(mealDetails);
     }
-    
+
 }
